@@ -1,0 +1,35 @@
+# Dependencias
+node_modules/
+
+# Archivos de entorno
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Directorios de caché
+.npm
+.eslintcache
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Directorios de cobertura
+coverage/
+
+# Archivos de configuración IDE
+.idea/
+.vscode/*
+!.vscode/launch.json
+!.vscode/settings.json
+
+# Archivos de compilación
+dist/
+build/
+
+# Archivos temporales
+tmp/
+temp/

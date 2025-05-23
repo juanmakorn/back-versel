@@ -1,10 +1,12 @@
 {
-    "builds":[{
-        "src": "index.js",
-        "use": "@vercel/node"
-    }],
-    "routes":[{
-        "src": "/(.*)",
-        "dest": "index.js"
-    }]
+  "version": 2,
+  "routes": [
+    { "src": "/about", "dest": "/about.html" }
+  ],
+  "redirects": [
+    { "source": "/old-route", "destination": "/new-route", "statusCode": 301 }
+  ],
+  "headers": [
+    { "source": "/api/*", "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }] }
+  ]
 }
